@@ -1,3 +1,26 @@
-<!-- <h1 style="background: green">Plantilla de Empleados</h1> -->
-<h2>{{componente_empleado}}</h2>
-<p>{{listado_empleados}}</p>
+<h2 style="color: blue">{{componente_empleado}}</h2>
+
+<strong>Empleado del Mes</strong>
+<br>
+<br>
+<div *ngIf="trabajadorExterno == true">
+    <button (click)="cambiarExterno(false)">Motrar Empleado</button>
+    <ul>
+        <li>{{trabajadores[0].nombre}}</li>
+        <li>{{trabajadores[0].edad}}</li>
+        <li>{{trabajadores[0].cargo}}</li>
+        <li *ngIf="trabajadores[0].contratado == true">Está Contratado</li>
+        <li *ngIf="trabajadores[0].contratado == false">No está Contratado</li>
+    </ul>
+</div>
+
+<div *ngIf="trabajadorExterno == false">
+    <button (click)="cambiarExterno(true)">Motrar Trabajador</button>
+    <ul>
+        <li>{{empleado.nombre}}</li>
+        <li>{{empleado.edad}}</li>
+        <li>{{empleado.cargo}}</li>
+        <li *ngIf="empleado.contratado == true">Está Contratado</li>
+        <li *ngIf="empleado.contratado == false">No está Contratado</li>
+    </ul>
+</div>
