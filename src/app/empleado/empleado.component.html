@@ -3,7 +3,7 @@
 <h3>Selector de colores:</h3>
 <button (click)="alertColor()">Motrar Color</button>
 <input type="text" [(ngModel)]="colorSeleccionado">
-<pre>
+<pre [style.border]="colorSeleccionado == 'red' ? '5px solid purple': '5px solid black'">
     <strong>Color elegido: {{colorSeleccionado}}</strong>
 </pre>
 <div [ngStyle]="{'background':colorSeleccionado, 'width': '200px', 'height':'200px', 'float':'right', 'margin-right': '70%'}">
