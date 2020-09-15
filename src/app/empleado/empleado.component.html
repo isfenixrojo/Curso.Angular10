@@ -1,3 +1,11 @@
+<h3>Uso de directiva ngSwitch</h3>
+<h2 style="color: green">Colores</h2>
+<ul [ngSwitch]="color">
+    <li *ngSwitchCase="'red'" [ngStyle]="{'background':color, 'color': 'white', 'padding':'20px'}">Es de color ROJO</li>
+    <li *ngSwitchCase="'green'" [ngStyle]="{'background':color, 'color': 'white', 'padding':'20px'}">Es de color VERDE</li>
+    <li *ngSwitchCase="'blue'" [ngStyle]="{'background':color, 'color': 'white', 'padding':'20px'}">Es de color AZUL</li>
+</ul>
+<hr>
 <h2 style="color: blue">{{componente_empleado}}</h2>
 <h3>Uso de directiva ngIf</h3>
 <div *ngIf="trabajadorExterno == true">
@@ -21,7 +29,7 @@
         <li *ngIf="empleado.contratado == false">No está Contratado</li>
     </ul>
 </div>
-<br>
+<hr>
 <h3>Uso de directiva ngFor</h3>
 <ul>
     <li *ngFor="let item of trabajadores; let i = index">
