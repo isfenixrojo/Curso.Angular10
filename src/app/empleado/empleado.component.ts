@@ -7,7 +7,7 @@ import { Empleado } from './empleado';
 })
 
 export class EmpleadoComponent {
-    public componente_empleado = 'Lista de Empleados';
+    public componente_empleado = 'Empleado del Mes';
     public empleado: Empleado;
     public trabajadores: Array<Empleado>;
     public trabajadorExterno: boolean;

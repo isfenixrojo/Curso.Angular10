@@ -1,8 +1,5 @@
 <h2 style="color: blue">{{componente_empleado}}</h2>
-
-<strong>Empleado del Mes</strong>
-<br>
-<br>
+<h3>Uso de directiva ngIf</h3>
 <div *ngIf="trabajadorExterno == true">
     <button (click)="cambiarExterno(false)">Motrar Empleado</button>
     <ul>
@@ -24,3 +21,17 @@
         <li *ngIf="empleado.contratado == false">No está Contratado</li>
     </ul>
 </div>
+<br>
+<h3>Uso de directiva ngFor</h3>
+<ul>
+    <li *ngFor="let item of trabajadores; let i = index">
+        <strong>Empleado: {{i+1}}</strong>
+        <ul>
+            <li>{{item.nombre}}</li>
+            <li>{{item.edad}}</li>
+            <li>{{item.cargo}}</li>
+            <li *ngIf="item.contratado == true">Está Contratado</li>
+            <li *ngIf="item.contratado == false">No está Contratado</li>
+        </ul>
+    </li>
+</ul>
