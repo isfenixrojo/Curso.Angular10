@@ -28,6 +28,16 @@ export class FrutaComponent {
         this.cambiarEdad(28);
         this.cambiarNombre();
         alert(this.nombre + " " + this.edad);
+
+        //Variables y alcances
+        var uno = 8;
+        var dos = 15;
+        if (uno === 8) {
+            let uno = 3;
+            var dos = 88;
+            console.log("Dentro del If " + uno + " " + dos);
+        }
+        console.log("Fuera del If " + uno + " " + dos);
     }
     cambiarNombre() {
         this.nombre = "Marco Hernandez Vazquez";
