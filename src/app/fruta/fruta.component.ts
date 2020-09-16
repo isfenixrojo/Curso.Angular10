@@ -27,7 +27,7 @@ export class FrutaComponent {
     ngOnInit() { //Es el primer metodo que se lanza cuando inicia la aplicacion de angular.
         this.cambiarEdad(28);
         this.cambiarNombre();
-        alert(this.nombre + " " + this.edad);
+        //alert(this.nombre + " " + this.edad);
 
         //Variables y alcances
         var uno = 8;

@@ -27,7 +27,7 @@ export class EmpleadoComponent {
         this.color = "blue";
         this.colorSeleccionado = "#ccc";
     }
-
+ 
     ngOnInit() {
         console.log(this.empleado);
         console.log(this.trabajadores);
