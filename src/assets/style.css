@@ -5,3 +5,11 @@
 .fondoVerde {
     background: lightgreen !important;
 }
+
+.activado {
+    font-weight: bold;
+    background: limegreen;
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+}
