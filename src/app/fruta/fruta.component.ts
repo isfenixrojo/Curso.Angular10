@@ -25,7 +25,7 @@ export class FrutaComponent {
     }
 
     ngOnInit() { //Es el primer metodo que se lanza cuando inicia la aplicacion de angular.
-        this.cambiarEdad(28);
+        this.cambiarEdad(6);
         this.cambiarNombre();
         //alert(this.nombre + " " + this.edad);
 
@@ -40,7 +40,7 @@ export class FrutaComponent {
         console.log("Fuera del If " + uno + " " + dos);
     }
     cambiarNombre() {
-        this.nombre = "Marco Hernandez Vazquez";
+        this.nombre = "Simon Moon Moon";
     }
     cambiarEdad(edad) {
         this.edad = edad;

@@ -2,5 +2,13 @@
     <h2 style="color: tomato;">{{title}}</h2>
     <!-- <fruta></fruta> -->
     <!--empleado></empleado-->
+    <hr>
+    <nav>
+        <a [routerLink]="['/pagina-principal']">Home</a> -
+        <a [routerLink]="['/contacto']">Contacto</a> -
+        <a [routerLink]="['/fruta']">Fruta</a> -
+        <a [routerLink]="['/empleado']">Empleado</a>
+    </nav>
+
     <router-outlet></router-outlet>
 </div>
