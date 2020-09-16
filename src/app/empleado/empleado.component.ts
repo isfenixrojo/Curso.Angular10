@@ -20,7 +20,8 @@ export class EmpleadoComponent {
             new Empleado("Simon Moon Moon", 6, "Trainig", true),
             new Empleado("Pelusa Pelu", 6, "Trainig", true),
             new Empleado("Evaristo Maclovio", 30, "Vendedor", false),
-            new Empleado("Florentina Villa", 26, "RR.HH", false)
+            new Empleado("Florentina Villa", 26, "RR.HH", false),
+            new Empleado("Parra Parra", 19, "Estudiante", false)
         ];
         this.trabajadorExterno = true;
         this.color = "blue";

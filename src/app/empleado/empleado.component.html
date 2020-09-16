@@ -1,7 +1,7 @@
 <h3>Uso de directiva ngSwitch</h3>
 <h2 style="color: green">Colores</h2>
 <h3>Selector de colores:</h3>
-<button (click)="alertColor()" [class.fondoAzul]="colorSeleccionado == 'blue'">Motrar Color</button>
+<button (click)="alertColor()" [ngClass]="{fondoAzul: colorSeleccionado == 'blue', fondoVerde: colorSeleccionado == 'green'}">Motrar Color</button>
 <input type="text" [(ngModel)]="colorSeleccionado">
 <pre [style.border]="colorSeleccionado == 'red' ? '5px solid purple': '5px solid black'" [class.fondoAzul]="colorSeleccionado == 'blue'">
     <strong>Color elegido: {{colorSeleccionado}}</strong>
