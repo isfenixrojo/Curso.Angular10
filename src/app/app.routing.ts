@@ -17,9 +17,6 @@ const appRoutes: Routes = [
     { path: 'contacto/:par', component: ContactoComponent },
     { path: 'coches', component: CochesComponent },
     { path: '**', component: HomeComponent }
-    
-
-
 ];
 
 export const appRoutingProviders: any[] = [];
